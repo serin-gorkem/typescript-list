@@ -5,12 +5,13 @@ interface Item {
 }
 
 export default class ListItem implements Item {
+  // Constructor to initialize the properties of the ListItem class.
   constructor(
     private _id: string = "",
     private _item: string = "",
     private _checked: boolean = false
   ) {}
-
+  // Getters and Setters for the properties of the ListItem class.
   get id(): string {
     return this._id;
   }
